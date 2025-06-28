@@ -1,0 +1,20 @@
+body {
+    background-color: #24353F;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#header img {
+    width: 100%;
+    height: auto;
+}
+.main-content{
+    margin-top: 10vh;
+}
+#Contact{
+    background-color: #1E202B;
+    
+}
+.navbar a{
+    color: white;
+}

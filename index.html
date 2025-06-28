@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav class="navbar navbar-expand-lg   ">
+        <div class="container ">
+            <a class="navbar-brand primary-font" href="#Home"><img src="/images/imgi_1_logo.png" alt="weatherLogo"></img> Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#liveCameras">Live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photos">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <main class="main-content ">
+        <header class="min-vh-100 d-flex flex-column justify-content-center align-items-center" id="Home">
+            <div class="container-fluid d-flex justify-content-center  ">
+                <form class="d-flex mb-5 " role="search">
+                    <input id="searchInput" class="form-control me-2  w-100" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success submit" type="submit">Find</button>
+                </form>
+            </div>
+            
+       <div class="container py-5">
+             <div class="row text-center" id="weatherItem">
+    </div>
+        </div>
+    </header>
+    </main>
+
+
+
+
+    <footer id="footer">
+        <div class="container py-5 text-light">
+            <div class="inner-footer d-flex flex-column justify-content-center align-items-center">
+                <p class="secondry-font text-white-50">Copy Right 2018 © By Daniels All Rights Reserved</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
