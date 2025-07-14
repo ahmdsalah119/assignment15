@@ -1,7 +1,7 @@
 body {
     background-color: #24353F;
     font-family: Arial, sans-serif;
-    color: white;
+    box-sizing: border-box;
 }
 
 #header img {
@@ -15,6 +15,72 @@ body {
     background-color: #1E202B;
     
 }
-.navbar a{
-    color: white;
+
+.navbar{
+    width: 70%;
+    background-color: #3d68f8;
 }
+#rowdata .cardstyle{
+
+filter: grayscale(90%) brightness(60%);
+border-radius:10px;
+overflow:hidden;
+position: relative;
+transition: all .4s ease;
+}
+.cardstyle img{
+    width: 100%;
+    display: block;
+}
+#rowdata .cardstyle:hover{
+    filter : none;
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+#lightbox{
+  background-color: rgba(0, 0, 0, 1);
+}
+.lightbox-item{
+  color: white;
+}
+.lightbox-header i{
+  font-size: 40px;
+}
+
+
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+

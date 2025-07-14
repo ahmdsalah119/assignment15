@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
-    <link rel="icon" href="images/favicon.ico">
+    <title>Gaming</title>
+    <link rel="icon" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,54 +15,69 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/media.css">
-</head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav class="navbar navbar-expand-lg   ">
-        <div class="container ">
-            <a class="navbar-brand primary-font" href="#Home"><img src="/images/imgi_1_logo.png" alt="weatherLogo"></img> Weather</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#news">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#liveCameras">Live Cameras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#photos">Photos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-
-
-    <main class="main-content ">
-        <header class="min-vh-100 d-flex flex-column justify-content-center align-items-center" id="Home">
-            <div class="container-fluid d-flex justify-content-center  ">
-                <form class="d-flex mb-5 " role="search">
-                    <input id="searchInput" class="form-control me-2  w-100" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success submit" type="submit">Find</button>
-                </form>
-            </div>
-            
-       <div class="container py-5">
-             <div class="row text-center" id="weatherItem">
-    </div>
+<body>
+    <header class="vh-50">
+        <div class="container d-flex justify-content-center align-content-center m-lg-auto">
+            <img src="images/wraper.png" alt="wallpaper">
         </div>
     </header>
-    </main>
+    <div class="container d-flex justify-content-center align-content-center m-lg-auto ">
+        <nav class="navbar navbar-expand-lg rounded-4">
+            <div class="container">
+                <a class="navbar-brand primary-font" href="#Home"> <span> <img class="w-25 rounded-2 "
+                            src="images/imgi_2_logo-sm.png" alt="logo"></span>Game Reviews</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" id="cats">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#mmorpg" id="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#shooter" id="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sailing"  id="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#permadeath"  id="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#superhero"  id="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pixel"  id="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="cards my-5 container d-flex justify-content-center align-items-center ">
+        <div class="row gap" id="rowdata">
+          <span class="loader"></span>
+        </div>
+    </div>
+
+    <!-- lightbox -->
+     <div class="lightbox-container start-0 end-0 top-0 bottom-0 position-fixed d-none " id="lightbox">
+        <div class="lightbox-item container d-flex flex-column py-5">
+            <div class="lightbox-header d-flex justify-content-between py-5 gap-5">
+                <h2>Game Details</h2>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="lightbox-content row  " id="lightContent">
+                
+                
+            </div>
+        </div>
+     </div>
+
+
 
 
 
